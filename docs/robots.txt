@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.arknovel1.xyz/sitemap.xml
+Sitemap: https://www.3novelpeacp.top/sitemap.xml
 
 # Allow all search engines to crawl the site
 Allow: /novels/
