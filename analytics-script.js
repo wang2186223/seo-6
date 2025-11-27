@@ -148,16 +148,17 @@ function initializeDailySpreadsheet(spreadsheet, dateString) {
   
   // 创建"页面访问"sheet
   const visitSheet = spreadsheet.insertSheet('页面访问');
-  visitSheet.getRange(1, 1, 1, 5).setValues([
-    ['时间', '访问页面', '用户属性', 'IP地址', '用户来源']
+  visitSheet.getRange(1, 1, 1, 6).setValues([
+    ['时间', '访问页面', '用户属性', 'IP地址', '用户来源分类', '完整来源URL']
   ]);
-  const visitHeader = visitSheet.getRange(1, 1, 1, 5);
+  const visitHeader = visitSheet.getRange(1, 1, 1, 6);
   visitHeader.setBackground('#4285f4').setFontColor('white').setFontWeight('bold');
-  visitSheet.setColumnWidth(1, 150);
-  visitSheet.setColumnWidth(2, 300);
-  visitSheet.setColumnWidth(3, 200);
-  visitSheet.setColumnWidth(4, 120);
-  visitSheet.setColumnWidth(5, 250);
+  visitSheet.setColumnWidth(1, 150);  // 时间
+  visitSheet.setColumnWidth(2, 300);  // 访问页面
+  visitSheet.setColumnWidth(3, 200);  // 用户属性
+  visitSheet.setColumnWidth(4, 120);  // IP地址
+  visitSheet.setColumnWidth(5, 250);  // 用户来源分类
+  visitSheet.setColumnWidth(6, 400);  // 完整来源URL
   
   // 创建"广告引导"sheet
   const adGuideSheet = spreadsheet.insertSheet('广告引导');
@@ -311,11 +312,12 @@ function handlePageVisitEvent(dailySpreadsheet, data) {
   }
   
   const rowData = [
-    getTimeString(),              // 时间
-    data.page || '',              // 访问页面
-    data.userAgent || '',         // 用户属性
-    data.userIP || 'Unknown',     // IP地址
-    data.referrer || 'Direct'     // 用户来源
+    getTimeString(),                        // 时间
+    data.page || '',                        // 访问页面
+    data.userAgent || '',                   // 用户属性
+    data.userIP || 'Unknown',               // IP地址
+    data.referrer || 'Direct',              // 用户来源分类
+    data.referrerUrl || 'Direct/None'       // 完整来源URL
   ];
   
   visitSheet.appendRow(rowData);
@@ -608,7 +610,8 @@ function testPageVisit() {
     eventType: 'page_visit',
     page: 'https://www.arknovel1.xyz/novels/test/chapter-1',
     userAgent: 'Mozilla/5.0 (iPhone; Test)',
-    referrer: 'https://www.arknovel1.xyz/novels/test/index',
+    referrer: 'Organic: Google Search',
+    referrerUrl: 'https://www.google.com/search?q=werewolf+novels',
     userIP: '127.0.0.1'
   };
   

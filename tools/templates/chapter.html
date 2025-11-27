@@ -137,7 +137,8 @@
                 page: window.location.href,
                 userAgent: navigator.userAgent,
                 userIP: userIP,
-                referrer: getReferrerSource()
+                referrer: getReferrerSource(),
+                referrerUrl: document.referrer || 'Direct/None'
             };
             
             // Send data to Google Apps Script
@@ -157,7 +158,8 @@
                 page: window.location.href,
                 userAgent: navigator.userAgent,
                 userIP: 'Unknown',
-                referrer: getReferrerSource()
+                referrer: getReferrerSource(),
+                referrerUrl: document.referrer || 'Direct/None'
             };
             
             fetch('https://script.google.com/macros/s/AKfycbzCh1631pZE0Wt5HrT1lbLhOtE3CFxXFX_DpwmJB3QZ73eN8nHGISvxALbAygqfnUTT/exec', {

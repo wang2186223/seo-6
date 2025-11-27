@@ -1,5 +1,53 @@
 # 流量来源追踪说明
 
+## ✨ 新增功能：完整URL追踪
+
+**现在系统会同时记录两个字段：**
+
+1. **用户来源分类** - 例如：`Organic: Google Search`
+2. **完整来源URL** - 例如：`https://www.google.com/search?q=werewolf+novels`
+
+### 📊 数据表格结构
+
+| 时间 | 访问页面 | 用户属性 | IP地址 | 用户来源分类 | 完整来源URL |
+|------|---------|---------|--------|------------|-------------|
+| 2025-11-27 10:30 | /novels/xxx/chapter-1 | Chrome/Windows | 192.168.1.1 | Organic: Google Search | https://www.google.com/search?q=werewolf |
+| 2025-11-27 10:31 | /novels/xxx/chapter-2 | Safari/iPhone | 192.168.1.2 | Internal: From Another Chapter | https://www.arknovel1.xyz/novels/xxx/chapter-1 |
+| 2025-11-27 10:32 | /novels/yyy/chapter-1 | Chrome/Mac | 192.168.1.3 | Social: Facebook | https://www.facebook.com/groups/romance-readers/posts/12345 |
+| 2025-11-27 10:33 | / | Edge/Windows | 192.168.1.4 | External: competitor.com | https://competitor.com/recommendations/best-novels |
+
+### 🔍 可以分析的信息
+
+#### 从Google来的用户
+```
+用户来源分类: Organic: Google Search
+完整来源URL: https://www.google.com/search?q=alpha+werewolf+romance
+```
+**分析：** 可以看到用户搜索的关键词是 "alpha werewolf romance"
+
+#### 从Facebook分享来的用户
+```
+用户来源分类: Social: Facebook  
+完整来源URL: https://www.facebook.com/groups/novel-lovers/posts/67890
+```
+**分析：** 用户从某个Facebook小组的特定帖子点击过来
+
+#### 从其他网站引荐
+```
+用户来源分类: External: goodreads.com
+完整来源URL: https://www.goodreads.com/book/show/12345-novel-title/reviews
+```
+**分析：** 用户从Goodreads的某本书的评论页面点击过来
+
+#### 站内导航
+```
+用户来源分类: Internal: From Novel Detail Page
+完整来源URL: https://www.arknovel1.xyz/novels/the-last-spirit-wolf/index.html
+```
+**分析：** 用户从"The Last Spirit Wolf"小说详情页点击进入章节
+
+---
+
 ## 优化后的来源分类体系
 
 ### 📊 完整的来源分类
