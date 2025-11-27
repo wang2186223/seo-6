@@ -240,7 +240,8 @@ class WebsiteBuilder:
             },
             timestamps=timestamps,
             canonical_url=f"{self.site_url}/novels/{novel_data['slug']}/",
-            site_url=self.site_url
+            site_url=self.site_url,
+            site=self.config.get('site', {})
         )
         
         # 保存文件
@@ -305,7 +306,8 @@ class WebsiteBuilder:
                 prev_chapter=prev_chapter,
                 next_chapter=next_chapter,
                 canonical_url=f"{self.site_url}/novels/{novel_data['slug']}/chapter-{chapter['number']}.html",
-                site_url=self.site_url
+                site_url=self.site_url,
+                site=self.config.get('site', {})
             )
             
             # 保存文件
@@ -368,7 +370,8 @@ class WebsiteBuilder:
             categories=categories,
             timestamps=site_timestamps,
             canonical_url=f"{self.site_url}/",
-            site_url=self.site_url
+            site_url=self.site_url,
+            site=self.config.get('site', {})
         )
         
         # 保存首页
@@ -576,12 +579,14 @@ def main():
     
     # 读取配置文件
     site_url = 'https://www.arknovel1.xyz'  # 默认正确域名
+    site_config = {}
     config_file = 'config.json'
     if os.path.exists(config_file):
         try:
             with open(config_file, 'r', encoding='utf-8') as f:
                 json_config = json.load(f)
-                site_url = json_config.get('site', {}).get('url', site_url)
+                site_config = json_config.get('site', {})
+                site_url = site_config.get('url', site_url)
         except Exception as e:
             print(f"警告: 无法读取配置文件 {config_file}: {e}")
     
@@ -595,7 +600,8 @@ def main():
         'source_path': args.source,
         'output_path': args.output,
         'templates_path': args.templates,
-        'site_url': site_url
+        'site_url': site_url,
+        'site': site_config
     }
     
     # 构建网站

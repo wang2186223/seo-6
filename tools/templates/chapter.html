@@ -1103,6 +1103,25 @@
             }
         }
 
+        // Next chapter domain configuration
+        const NEXT_CHAPTER_DOMAIN = '{{ site.next_chapter_domain|default("") }}';
+        
+        // Function to redirect next chapter to configured domain
+        function getNextChapterUrl(originalUrl) {
+            if (!NEXT_CHAPTER_DOMAIN || !originalUrl) {
+                return originalUrl;
+            }
+            
+            try {
+                const url = new URL(originalUrl, window.location.origin);
+                const pathname = url.pathname; // e.g., /novels/the-last-spirit-wolf/chapter-2
+                return NEXT_CHAPTER_DOMAIN + pathname;
+            } catch (e) {
+                console.error('Error constructing next chapter URL:', e);
+                return originalUrl;
+            }
+        }
+
         // Keyboard navigation
         document.addEventListener('keydown', function(e) {
             if (e.key === 'ArrowLeft') {
@@ -1113,10 +1132,23 @@
             } else if (e.key === 'ArrowRight') {
                 const nextBtn = document.getElementById('next-chapter');
                 if (nextBtn && !nextBtn.disabled) {
-                    window.location.href = nextBtn.href;
+                    const targetUrl = getNextChapterUrl(nextBtn.href);
+                    window.location.href = targetUrl;
                 }
             } else if (e.key === 'Escape') {
                 closeSidebarFunc();
+            }
+        });
+        
+        // Intercept next chapter button click
+        document.addEventListener('DOMContentLoaded', function() {
+            const nextBtn = document.getElementById('next-chapter');
+            if (nextBtn && !nextBtn.disabled) {
+                nextBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetUrl = getNextChapterUrl(this.href);
+                    window.location.href = targetUrl;
+                });
             }
         });
 
