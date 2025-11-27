@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Book pages -->
+  <rect x="12" y="8" width="40" height="48" rx="2" fill="#f8f9fa"/>
+  
+  <!-- Book spine shadow -->
+  <rect x="12" y="8" width="4" height="48" fill="#e9ecef"/>
+  
+  <!-- Book cover -->
+  <path d="M 16 8 L 52 8 C 53.1 8 54 8.9 54 10 L 54 54 C 54 55.1 53.1 56 52 56 L 16 56 L 16 8 Z" fill="#6366f1"/>
+  
+  <!-- Book spine -->
+  <rect x="12" y="8" width="4" height="48" fill="#4338ca"/>
+  
+  <!-- Page lines -->
+  <line x1="22" y1="20" x2="46" y2="20" stroke="#e0e7ff" stroke-width="1.5"/>
+  <line x1="22" y1="26" x2="46" y2="26" stroke="#e0e7ff" stroke-width="1.5"/>
+  <line x1="22" y1="32" x2="42" y2="32" stroke="#e0e7ff" stroke-width="1.5"/>
+  
+  <!-- Heart icon (romance theme) -->
+  <path d="M 32 42 L 28 38 C 25 35 25 31 28 28 C 31 25 35 25 32 28 C 29 25 33 25 36 28 C 39 31 39 35 36 38 Z" fill="#f87171" opacity="0.9"/>
+</svg>
