@@ -1,0 +1,2023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovelVibe - Free Novels for Women</title>
+    <meta name="description" content="Discover thousands of free werewolf romance novels. Read passionate alpha stories, mate bonds, and pack adventures. Perfect for women who love paranormal romance.">
+    <meta name="keywords" content="free werewolf novels, alpha romance, mate bond stories, paranormal romance, werewolf fiction, free books for women">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Time Meta Tags for SEO -->
+    
+    <meta property="article:published_time" content="2025-11-27T12:28:46.560452">
+    <meta property="article:modified_time" content="2025-11-27T12:28:46.560452">
+    <meta name="date" content="2025-11-27">
+    <meta name="last-modified" content="2025-11-27 12:28:46">
+    
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="NovelVibe - Free Novels for Women">
+    <meta property="og:description" content="Discover thousands of free werewolf romance novels">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.arknovel1.xyz/">
+    <meta property="og:image" content="https://www.arknovel1.xyz/assets/images/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NovelVibe">
+    <meta name="twitter:description" content="Free werewolf romance novels">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.arknovel1.xyz/">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KM9R2XBQSL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-KM9R2XBQSL');
+    </script>
+    
+    <!-- Google AdSense
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3785399647875281"
+         crossorigin="anonymous"></script> -->
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '3902941096613787');
+    
+    // Natural 72-hour event tracking prevention (resets every 3 days)
+    function shouldTrackEvent(eventName) {
+        const now = new Date();
+        const threeDaysAgo = new Date(now.getTime() - (3 * 24 * 60 * 60 * 1000));
+        const currentPeriod = Math.floor(now.getTime() / (3 * 24 * 60 * 60 * 1000));
+        const storageKey = `fb_event_${eventName}`;
+        const lastTrackedPeriod = localStorage.getItem(storageKey);
+        
+        if (!lastTrackedPeriod || parseInt(lastTrackedPeriod) !== currentPeriod) {
+            localStorage.setItem(storageKey, currentPeriod.toString());
+            return true;
+        }
+        
+        return false;
+    }
+    
+    // Track PageView with 72-hour prevention
+    if (shouldTrackEvent('PageView_Index')) {
+        fbq('track', 'PageView');
+        console.log('Facebook事件已发送: PageView (索引页浏览)');
+    } else {
+        console.log('Facebook事件已跳过: PageView_Index (本72小时内已发送)');
+    }
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=3902941096613787&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <!-- Page Visit Statistics Code -->
+    <script>
+    // Page visit data collection
+    function sendPageVisit() {
+        // First get user IP address
+        getUserIP().then(userIP => {
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: userIP
+            };
+            
+            // Send data to Google Apps Script
+            fetch('https://script.google.com/macros/s/AKfycbxelrFrGdaEQc3FabEG8j4lGrH1z3otX-1zCQbEhAym04fIm6qQ9lLLqjjrjjVlsnRx/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        }).catch(error => {
+            // If IP retrieval fails, still send other data
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: 'Unknown',
+                referrer: getReferrerSource()
+            };
+            
+            fetch('https://script.google.com/macros/s/AKfycbzCh1631pZE0Wt5HrT1lbLhOtE3CFxXFX_DpwmJB3QZ73eN8nHGISvxALbAygqfnUTT/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        });
+    }
+    
+    // Get referrer source (traffic source detection)
+    function getReferrerSource() {
+        const referrer = document.referrer || '';
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        if (urlParams.has('utm_source')) return 'Campaign: ' + urlParams.get('utm_source');
+        if (urlParams.has('fbclid')) return 'Facebook Ads';
+        if (urlParams.has('gclid')) return 'Google Ads';
+        if (!referrer) return 'Direct Traffic';
+        
+        try {
+            const refUrl = new URL(referrer);
+            const refHost = refUrl.hostname.toLowerCase();
+            if (refHost.includes('google.')) return 'Google Search';
+            if (refHost.includes('facebook.com') || refHost.includes('fb.com')) return 'Facebook';
+            if (refHost.includes('instagram.com')) return 'Instagram';
+            if (refHost.includes('twitter.com') || refHost.includes('t.co')) return 'Twitter/X';
+            if (refHost.includes('tiktok.com')) return 'TikTok';
+            if (refHost.includes('bing.com')) return 'Bing Search';
+            if (refHost.includes('yahoo.com')) return 'Yahoo Search';
+            if (refHost.includes('reddit.com')) return 'Reddit';
+            if (refHost.includes('pinterest.com')) return 'Pinterest';
+            if (refHost === window.location.hostname) return 'Internal Navigation';
+            return 'Referral: ' + refHost;
+        } catch (e) {
+            return 'Unknown Referrer';
+        }
+    }
+    
+    // Get user IP address
+    async function getUserIP() {
+        try {
+            // Method 1: Use free IP API
+            const response = await fetch('https://api.ipify.org?format=json');
+            const ipData = await response.json();
+            return ipData.ip;
+        } catch (error1) {
+            try {
+                // Method 2: Backup IP API
+                const response = await fetch('https://httpbin.org/ip');
+                const ipData = await response.json();
+                return ipData.origin.split(',')[0].trim();
+            } catch (error2) {
+                try {
+                    // Method 3: Third backup API
+                    const response = await fetch('https://jsonip.com');
+                    const ipData = await response.json();
+                    return ipData.ip;
+                } catch (error3) {
+                    console.log('IP retrieval failed, using Unknown');
+                    return 'Unknown';
+                }
+            }
+        }
+    }
+    
+    // Send visit data after page load
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', sendPageVisit);
+    } else {
+        sendPageVisit();
+    }
+    </script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #ff6b6b;
+            --secondary-color: #9c89b8;
+            --background-color: #f8f9fa;
+            --card-bg-color: #ffffff;
+            --text-color: #333333;
+            --light-text: #6c757d;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+            --hover-shadow: rgba(0, 0, 0, 0.15);
+            --footer-bg: #343a40;
+            --footer-text: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding-top: 70px;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--card-bg-color);
+            box-shadow: 0 2px 10px var(--shadow-color);
+            z-index: 1000;
+            padding: 12px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .search-box {
+            position: relative;
+        }
+
+        .search-box input {
+            padding: 8px 12px 8px 35px;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            width: 220px;
+            transition: all 0.3s;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 2px rgba(156, 137, 184, 0.2);
+            width: 250px;
+        }
+
+        .search-box i {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--light-text);
+            font-size: 0.9rem;
+        }
+
+        .user-actions {
+            display: flex;
+            gap: 12px;
+        }
+
+        .user-actions a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .user-actions a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        /* Section Headers */
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
+        .view-more {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .view-more:hover {
+            text-decoration: underline;
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        /* Novel Card */
+        .novel-card {
+            background-color: var(--card-bg-color);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px var(--shadow-color);
+            transition: all 0.3s ease;
+            animation: fadeIn 0.5s ease-out;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .novel-card:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 6px 12px var(--hover-shadow);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .cover-container {
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .novel-cover {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .card-content {
+            padding: 12px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .novel-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            min-height: 2.4rem;
+        }
+
+        .novel-desc {
+            font-size: 0.8rem;
+            color: var(--light-text);
+            margin-bottom: 10px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            flex-grow: 1;
+            line-height: 1.4;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-bottom: 12px;
+        }
+
+        .tag {
+            background-color: rgba(156, 137, 184, 0.15);
+            color: var(--secondary-color);
+            padding: 3px 6px;
+            border-radius: 3px;
+            font-size: 0.7rem;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        .read-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 3px;
+            font-weight: 500;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .read-btn:hover {
+            background-color: #ff5252;
+            transform: translateY(-1px);
+        }
+
+        /* Read More Button Styles */
+        .read-more-button {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .read-more-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+            background: linear-gradient(135deg, #ff5252, #8e7cc3);
+        }
+
+        .read-more-button:active {
+            transform: translateY(0);
+        }
+
+        .read-more-button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        #load-more-btn:hover {
+            background-color: #654321 !important;
+        }
+
+        .update-date {
+            font-size: 0.7rem;
+            color: var(--light-text);
+        }
+
+        /* Featured Section */
+        .featured {
+            margin-bottom: 30px;
+        }
+
+        .featured .cards-grid {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+
+        .featured .novel-card {
+            border: 2px solid var(--secondary-color);
+        }
+
+        /* Categories Section */
+        .categories {
+            margin-bottom: 30px;
+        }
+
+        .category-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .category-item {
+            background-color: var(--card-bg-color);
+            padding: 12px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px var(--shadow-color);
+        }
+
+        .category-title {
+            font-size: 1rem;
+            color: var(--secondary-color);
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-title a {
+            font-size: 0.85rem;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .category-books {
+            list-style: none;
+        }
+
+        .category-books li {
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .category-books li:last-child {
+            border-bottom: none;
+        }
+
+        .category-books a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.85rem;
+            display: block;
+        }
+
+        .category-books a:hover {
+            color: var(--primary-color);
+        }
+
+        /* History Section */
+        .history {
+            margin-bottom: 30px;
+        }
+
+        .history .cards-grid {
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 15px;
+        }
+
+        .history .novel-card {
+            box-shadow: 0 2px 6px rgba(156, 137, 184, 0.3);
+        }
+
+        .history .novel-title {
+            font-size: 0.85rem;
+            -webkit-line-clamp: 1;
+            min-height: auto;
+        }
+
+        .history .cover-container {
+            height: 180px;
+        }
+
+        .progress-bar {
+            height: 3px;
+            background-color: #e9ecef;
+            border-radius: 2px;
+            margin-top: 6px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        /* Random Recommendations Section */
+        .random {
+            margin-bottom: 30px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--footer-bg);
+            color: var(--footer-text);
+            padding: 30px 0 15px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .footer-logo {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 12px;
+        }
+
+        .footer-about {
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            opacity: 0.8;
+            line-height: 1.5;
+        }
+
+        .footer-links h3 {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            position: relative;
+            padding-bottom: 6px;
+        }
+
+        .footer-links h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 35px;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 6px;
+        }
+
+        .footer-links a {
+            color: var(--footer-text);
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+            font-size: 0.85rem;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 15px;
+            margin-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 10px 4%;
+            }
+
+            .search-box input {
+                width: 160px;
+            }
+
+            .search-box input:focus {
+                width: 180px;
+            }
+
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .cards-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 15px;
+            }
+
+            .cover-container {
+                height: 200px;
+            }
+            
+            .category-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .nav-right {
+                gap: 10px;
+            }
+
+            .search-box input {
+                width: 130px;
+                padding: 6px 10px 6px 28px;
+            }
+
+            .search-box input:focus {
+                width: 150px;
+            }
+
+            .search-box i {
+                left: 10px;
+                font-size: 0.8rem;
+            }
+
+            .user-actions {
+                display: none;
+            }
+
+            .cover-container {
+                height: 180px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+            
+            .section-title {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+    
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="E2ZZe80dfDLAEGhT2iI37A" async></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="/" class="logo">Novel<span>Vibe</span></a>
+        <div class="nav-right">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search novels...">
+            </div>
+            <div class="user-actions">
+                <a href="#">Login</a>
+                <a href="#">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Reading History Section -->
+        <section class="history">
+            <div class="section-header">
+                <h2 class="section-title">Reading History</h2>
+                <a href="#" class="view-more" onclick="clearReadingHistory()">Clear History</a>
+            </div>
+            <div class="cards-grid" id="history-container">
+                <!-- 历史记录将通过JavaScript动态加载 -->
+            </div>
+        </section>
+
+        <!-- Recommended For You Section -->
+        <section class="recommended">
+            <div class="section-header">
+                <h2 class="section-title">Recommended For You</h2>
+            </div>
+            <div class="cards-grid" id="recommended-grid">
+                <!-- 默认展示30本小说 -->
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/the-last-spirit-wolf/">
+                            <img src="/covers/the-last-spirit-wolf-书籍封面.png" alt="The Last Spirit Wolf" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/the-last-spirit-wolf/" style="color: inherit; text-decoration: none;">The Last Spirit Wolf</a></h3>
+                        <p class="novel-desc">“INCOMING! 10 Injured Wolves and 3 Lycans! “ Sophie, my bestie, our alpha yells in my head “LYCANS?! Did you just say LYCANS?! “Yes Vera! They are coming! Get your people ready.” I couldn’t believe...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">werewolf</span>
+                            
+                            <span class="tag">alpha</span>
+                            
+                            <span class="tag">pack</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/the-last-spirit-wolf/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/she-was-the-joke-now-shes-the-queen/">
+                            <img src="/covers/she-was-the-joke-now-shes-the-queen-书籍封面.png" alt="She Was The Joke, Now She&#39;s The Queen" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/she-was-the-joke-now-shes-the-queen/" style="color: inherit; text-decoration: none;">She Was The Joke, Now She&#39;s The Queen</a></h3>
+                        <p class="novel-desc">Two years of marriage left Brinley questioning everything, her supposed happiness revealed as nothing but sham. Abandoning her past for Colin, she discovered onl betrayal and a counterfeit wedding....</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                            <span class="tag">fantasy</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/she-was-the-joke-now-shes-the-queen/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/">
+                            <img src="/covers/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen-ScreenShot_2025-11-27_104240_384.png" alt="Brilliance Unmasked： The Cold-Blooded Tycoon Wants His Vengeful Queen" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/" style="color: inherit; text-decoration: none;">Brilliance Unmasked： The Cold-Blooded Tycoon Wants His Vengeful Queen</a></h3>
+                        <p class="novel-desc">Arabella, a state-trained prodigy, won freedom after seven brutal years. Back home, she found he aunt basking in her late parents&#39; mansion while hei twin sister scrounged for scraps. Fury ignited her...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                            <span class="tag">fantasy</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/once-discarded-now-desired-2/">
+                            <img src="/covers/once-discarded-now-desired-2-书籍封面.png" alt="Once Discarded, Now Desired 2" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/once-discarded-now-desired-2/" style="color: inherit; text-decoration: none;">Once Discarded, Now Desired 2</a></h3>
+                        <p class="novel-desc">After three years of giving her all to the marriage Eleanor&#39;s reward was nothing but a ruthless divorce! Trouble brewed from her ex-husband&#39;s old lover, and the in-law eagerly piled on. Coffee...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/once-discarded-now-desired-2/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/heartbreak-billionairehe-should-never-have-let-go/">
+                            <img src="/covers/heartbreak-billionairehe-should-never-have-let-go-ScreenShot_2025-11-27_104212_338.png" alt="Heartbreak Billionaire：He should never have Let Go" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/heartbreak-billionairehe-should-never-have-let-go/" style="color: inherit; text-decoration: none;">Heartbreak Billionaire：He should never have Let Go</a></h3>
+                        <p class="novel-desc">Sunlit hours found their affection glimmering while moonlit nights ignited reckless desire. But when Brandon learned his beloved might last only half a year, he coolly handed Millie divorce papers,...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/heartbreak-billionairehe-should-never-have-let-go/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/a-goddess-in-disguise-divorce-marriage-domination/">
+                            <img src="/covers/a-goddess-in-disguise-divorce-marriage-domination-ScreenShot_2025-11-27_104258_654.png" alt="A Goddess In Disguise Divorce, Marriage, Domination" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/a-goddess-in-disguise-divorce-marriage-domination/" style="color: inherit; text-decoration: none;">A Goddess In Disguise Divorce, Marriage, Domination</a></h3>
+                        <p class="novel-desc">...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                            <span class="tag">fantasy</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/a-goddess-in-disguise-divorce-marriage-domination/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/the-queen-returns-pampered-by-her-three-powerhouse-brothers/">
+                            <img src="/covers/the-queen-returns-pampered-by-her-three-powerhouse-brothers-ScreenShot_2025-11-27_104058_981.png" alt="The Queen Returns Pampered By Her Three Powerhouse Brothers" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/the-queen-returns-pampered-by-her-three-powerhouse-brothers/" style="color: inherit; text-decoration: none;">The Queen Returns Pampered By Her Three Powerhouse Brothers</a></h3>
+                        <p class="novel-desc">...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                            <span class="tag">fantasy</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/the-queen-returns-pampered-by-her-three-powerhouse-brothers/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/finding-bliss-again-my-baby-daddy-is-the-most-powerful-man-alive/">
+                            <img src="/covers/finding-bliss-again-my-baby-daddy-is-the-most-powerful-man-alive-书籍封面.png" alt="Finding Bliss Again My Baby Daddy Is The Most Powerful Man Alive!" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/finding-bliss-again-my-baby-daddy-is-the-most-powerful-man-alive/" style="color: inherit; text-decoration: none;">Finding Bliss Again My Baby Daddy Is The Most Powerful Man Alive!</a></h3>
+                        <p class="novel-desc">At their wedding night, Kayla caught her brand-new husband cheating. Reeling and half-drunk, she staggered into the wrong suite and collapsed into a stranger&#39;s arms Sunrise brought a pounding...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">ceo</span>
+                            
+                            <span class="tag">billionaire</span>
+                            
+                            <span class="tag">contemporary</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/finding-bliss-again-my-baby-daddy-is-the-most-powerful-man-alive/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/the-humble-ex-wife-is-now-a-brillia/">
+                            <img src="/covers/the-humble-ex-wife-is-now-a-brillia-ScreenShot_2025-11-27_104122_502.png" alt="The Humble Ex-wife Is Now A Brillia" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/the-humble-ex-wife-is-now-a-brillia/" style="color: inherit; text-decoration: none;">The Humble Ex-wife Is Now A Brillia</a></h3>
+                        <p class="novel-desc">For three quiet, patient years, Christina kept house,only to be coldly discarded by the man she once trusted.
+
+
+
+Instead,he paraded a new lover, making her the punchline of every town...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/the-humble-ex-wife-is-now-a-brillia/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/the-rise-of-the-ugly-luna-2/">
+                            <img src="/covers/the-rise-of-the-ugly-luna-2-书籍封面.png" alt="The Rise Of The Ugly Luna 2" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/the-rise-of-the-ugly-luna-2/" style="color: inherit; text-decoration: none;">The Rise Of The Ugly Luna 2</a></h3>
+                        <p class="novel-desc">Lyric had spent her life being hated. Bullied for her scarred face and hated by everyone-including her own mate-she was always told she was ugly. Her mate only kept her around to gain territory, and...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">werewolf</span>
+                            
+                            <span class="tag">alpha</span>
+                            
+                            <span class="tag">pack</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/the-rise-of-the-ugly-luna-2/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/">
+                            <img src="/covers/i-slapped-my-fiance-then-married-his-billionaire-nemesis-封面.png" alt="I Slapped My Fiancé-Then Married His Billionaire Nemesis" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/" style="color: inherit; text-decoration: none;">I Slapped My Fiancé-Then Married His Billionaire Nemesis</a></h3>
+                        <p class="novel-desc">...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                            <span class="tag">fantasy</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/irresistible-seduction-married-for-deception-loved-for-real/">
+                            <img src="/covers/irresistible-seduction-married-for-deception-loved-for-real-封面.png" alt="Irresistible Seduction Married For Deception, Loved For Real" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/irresistible-seduction-married-for-deception-loved-for-real/" style="color: inherit; text-decoration: none;">Irresistible Seduction Married For Deception, Loved For Real</a></h3>
+                        <p class="novel-desc">Five years into marriage, Hannah caught Vincent slipping into a hotel with his first love-the woman ,au-bu!uiXJa^a Jay pio+ 1ubis auL 1ob0 Ja^au au married her only for her resemblance to his true...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/irresistible-seduction-married-for-deception-loved-for-real/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/irresistible-temptation-from-the-meek-wife-to-the-daring-star/">
+                            <img src="/covers/irresistible-temptation-from-the-meek-wife-to-the-daring-star-书籍封面.png" alt="Irresistible Temptation From The Meek Wife To The Daring Star" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/irresistible-temptation-from-the-meek-wife-to-the-daring-star/" style="color: inherit; text-decoration: none;">Irresistible Temptation From The Meek Wife To The Daring Star</a></h3>
+                        <p class="novel-desc">One year into marriage, Yvonne realized she was nothing more than a substitute for someone else memory. When his true love reappeared, Julian tossed a divorce contract her way. &#34;She&#39;s back. We&#39;re...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/irresistible-temptation-from-the-meek-wife-to-the-daring-star/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/loves-prescription-the-small-town-girl-is-an-extraordinary-healer-3/">
+                            <img src="/covers/loves-prescription-the-small-town-girl-is-an-extraordinary-healer-3-书籍封面.png" alt="Love&#39;s Prescription The Small-Town Girl Is An Extraordinary Healer 3" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/loves-prescription-the-small-town-girl-is-an-extraordinary-healer-3/" style="color: inherit; text-decoration: none;">Love&#39;s Prescription The Small-Town Girl Is An Extraordinary Healer 3</a></h3>
+                        <p class="novel-desc">To most, Verena passed for a small-town clinic doctor; in truth, she worked quiet miracles. Three years after Isaac fell hopelessly for her and kept vigil through lonely nights, a crash left him in a...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/loves-prescription-the-small-town-girl-is-an-extraordinary-healer-3/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/crimson-moons-exile/">
+                            <img src="/covers/crimson-moons-exile-ScreenShot_2025-11-27_103934_971.png" alt="Crimson Moon&#39;s Exile" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/crimson-moons-exile/" style="color: inherit; text-decoration: none;">Crimson Moon&#39;s Exile</a></h3>
+                        <p class="novel-desc">A fallen prince. A human marked for death. An eternal vow that shatters worlds.
+When Kaizen, a monstrous heir to hell, saves teacher Willow from his own pack, he becomes a traitor. Hunted for murder,...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">werewolf</span>
+                            
+                            <span class="tag">alpha</span>
+                            
+                            <span class="tag">pack</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/crimson-moons-exile/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/marrying-her-was-easy-losing-her-was-hell/">
+                            <img src="/covers/marrying-her-was-easy-losing-her-was-hell-ScreenShot_2025-11-27_104146_596.png" alt="Marrying Her Was Easy, Losing Her Was Hell" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/marrying-her-was-easy-losing-her-was-hell/" style="color: inherit; text-decoration: none;">Marrying Her Was Easy, Losing Her Was Hell</a></h3>
+                        <p class="novel-desc">&#34;Stella once savored Marc&#39;s devotion, yet his covert cruelty cut deep. She torched their weddin&#39; portrait at his feet while he sent flirty messages to his mistress. With her chest tight and eyes...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">ocean</span>
+                            
+                            <span class="tag">underwater</span>
+                            
+                            <span class="tag">marine</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/marrying-her-was-easy-losing-her-was-hell/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/married-to-an-ugly-husband-no/">
+                            <img src="/covers/married-to-an-ugly-husband-no-书籍封面.png" alt="Married to an Ugly Husband No!" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/married-to-an-ugly-husband-no/" style="color: inherit; text-decoration: none;">Married to an Ugly Husband No!</a></h3>
+                        <p class="novel-desc">My malicious stepsister threatened me with my brother&#39;s life, forcing me to marry a man rumored to be unspeakably ugly. I had no choice but to comply. However, after the wedding, I discovered that...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">ocean</span>
+                            
+                            <span class="tag">underwater</span>
+                            
+                            <span class="tag">marine</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/married-to-an-ugly-husband-no/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/rejected-no-more-i-am-way-out-of-your-league-darling/">
+                            <img src="/covers/rejected-no-more-i-am-way-out-of-your-league-darling-书籍封面.png" alt="Rejected No More I Am Way Out Of Your League, Darling!" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/rejected-no-more-i-am-way-out-of-your-league-darling/" style="color: inherit; text-decoration: none;">Rejected No More I Am Way Out Of Your League, Darling!</a></h3>
+                        <p class="novel-desc">For ten years, Daniela showered her ex-husband with unwavering devotion,only to discover she was just his biggest joke. Feeling humiliated yet determined,she finally divorced him. Three months later,...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">ceo</span>
+                            
+                            <span class="tag">billionaire</span>
+                            
+                            <span class="tag">contemporary</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/rejected-no-more-i-am-way-out-of-your-league-darling/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/unstoppable-brilliance-she-has-the-world-on-a-leash/">
+                            <img src="/covers/unstoppable-brilliance-she-has-the-world-on-a-leash-ScreenShot_2025-11-27_104017_490.png" alt="Unstoppable Brilliance She Has The World On A Leash" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/unstoppable-brilliance-she-has-the-world-on-a-leash/" style="color: inherit; text-decoration: none;">Unstoppable Brilliance She Has The World On A Leash</a></h3>
+                        <p class="novel-desc">Hidden for years by the state despite a fortune worth billions, Grace bounced through three foster homes. At her fourth stop, the wealthy Holden family showered her with care, sparking spiteful...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">ceo</span>
+                            
+                            <span class="tag">billionaire</span>
+                            
+                            <span class="tag">contemporary</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/unstoppable-brilliance-she-has-the-world-on-a-leash/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/">
+                            <img src="/covers/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo-书籍封面.png" alt="The Heiress Spoiled by Four Brothers and One Devilish CEO" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/" style="color: inherit; text-decoration: none;">The Heiress Spoiled by Four Brothers and One Devilish CEO</a></h3>
+                        <p class="novel-desc">...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                            <span class="tag">fantasy</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/heaven-sent-her-hell-obeyed-her/">
+                            <img src="/covers/heaven-sent-her-hell-obeyed-her-书籍封面.png" alt="Heaven Sent Her, Hell Obeyed Her" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/heaven-sent-her-hell-obeyed-her/" style="color: inherit; text-decoration: none;">Heaven Sent Her, Hell Obeyed Her</a></h3>
+                        <p class="novel-desc">...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                            <span class="tag">fantasy</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/heaven-sent-her-hell-obeyed-her/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/too-late-for-regret-the-genius-heiress-who-shines/">
+                            <img src="/covers/too-late-for-regret-the-genius-heiress-who-shines-ScreenShot_2025-11-27_104318_455.png" alt="Too Late For Regret The Genius Heiress Who Shines" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/too-late-for-regret-the-genius-heiress-who-shines/" style="color: inherit; text-decoration: none;">Too Late For Regret The Genius Heiress Who Shines</a></h3>
+                        <p class="novel-desc">Blinded in a crash, Cary was rejected by every socialite—except Evelina, who married him without hesitation. Three years later, he regained his sight and ended their marriage. &#34;We’ve already lost so...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">ceo</span>
+                            
+                            <span class="tag">billionaire</span>
+                            
+                            <span class="tag">contemporary</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/too-late-for-regret-the-genius-heiress-who-shines/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/the-unwanted-daughters-alpha-king/">
+                            <img src="/covers/the-unwanted-daughters-alpha-king-封面.png" alt="The Unwanted Daughter&#39;s Alpha King" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/the-unwanted-daughters-alpha-king/" style="color: inherit; text-decoration: none;">The Unwanted Daughter&#39;s Alpha King</a></h3>
+                        <p class="novel-desc">The door behind me opened. Alpha Adrian was smiling, looking at the man now standing before us both, but his face fell the second his eyes landed on me, shock and disgust filling his gaze. ‘Alpha...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">werewolf</span>
+                            
+                            <span class="tag">alpha</span>
+                            
+                            <span class="tag">pack</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/the-unwanted-daughters-alpha-king/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/">
+                            <img src="/covers/hell-in-his-eyes-heaven-in-his-kiss-书籍封面.png" alt="Hell In His Eyes, Heaven In His Kiss" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/" style="color: inherit; text-decoration: none;">Hell In His Eyes, Heaven In His Kiss</a></h3>
+                        <p class="novel-desc">Gabriela learned her boyfriend had been two-timing her and writing her off as a brainless bimbo, so she drowned her heartache in reckless adventure. One sultry blackout night she tumbled into bed...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">ceo</span>
+                            
+                            <span class="tag">billionaire</span>
+                            
+                            <span class="tag">contemporary</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/scorned-ex-wife-queen-of-ashes/">
+                            <img src="/covers/scorned-ex-wife-queen-of-ashes-封面.png" alt="SCORNED EX WIFE  Queen Of Ashes" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/scorned-ex-wife-queen-of-ashes/" style="color: inherit; text-decoration: none;">SCORNED EX WIFE  Queen Of Ashes</a></h3>
+                        <p class="novel-desc">...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                            <span class="tag">fantasy</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/scorned-ex-wife-queen-of-ashes/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/the-son-of-red-fang/">
+                            <img src="/covers/the-son-of-red-fang-ScreenShot_2025-11-27_104040_145.png" alt="The Son of Red Fang" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/the-son-of-red-fang/" style="color: inherit; text-decoration: none;">The Son of Red Fang</a></h3>
+                        <p class="novel-desc">Alpha werewolves should be cruel and merciless with unquestionable strength and authority, at least that’s what Alpha Charles Redmen believes and he doesn’t hesitate to raise his kids to be the same...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">werewolf</span>
+                            
+                            <span class="tag">alpha</span>
+                            
+                            <span class="tag">pack</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/the-son-of-red-fang/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Read More Button -->
+            <div class="read-more-container" style="text-align: center; margin: 30px 0;">
+                <button id="read-more-btn" class="read-more-button" style="display: inline-flex;">
+                    <i class="fas fa-plus"></i> Read More
+                </button>
+                <div id="loading-indicator" style="display: none; color: #666; margin: 20px 0; font-size: 16px;">
+                    <i class="fas fa-spinner fa-spin"></i> Loading more novels...
+                </div>
+            </div>
+        </section>
+        
+        <!-- Featured Novels Section -->
+        <section class="featured">
+            <div class="section-header">
+                <h2 class="section-title">Featured Novels</h2>
+                <a href="#" class="view-more">View All</a>
+            </div>
+            <div class="cards-grid">
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/she-was-the-joke-now-shes-the-queen/">
+                            <img src="/covers/she-was-the-joke-now-shes-the-queen-书籍封面.png" alt="She Was The Joke, Now She&#39;s The Queen" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/she-was-the-joke-now-shes-the-queen/" style="color: inherit; text-decoration: none;">She Was The Joke, Now She&#39;s The Queen</a></h3>
+                        <p class="novel-desc">Two years of marriage left Brinley questioning everything, her supposed happiness revealed as nothing but sham. Abandoning her past for Colin, she discovered onl betrayal and a counterfeit wedding....</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                            <span class="tag">fantasy</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/she-was-the-joke-now-shes-the-queen/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/finding-bliss-again-my-baby-daddy-is-the-most-powerful-man-alive/">
+                            <img src="/covers/finding-bliss-again-my-baby-daddy-is-the-most-powerful-man-alive-书籍封面.png" alt="Finding Bliss Again My Baby Daddy Is The Most Powerful Man Alive!" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/finding-bliss-again-my-baby-daddy-is-the-most-powerful-man-alive/" style="color: inherit; text-decoration: none;">Finding Bliss Again My Baby Daddy Is The Most Powerful Man Alive!</a></h3>
+                        <p class="novel-desc">At their wedding night, Kayla caught her brand-new husband cheating. Reeling and half-drunk, she staggered into the wrong suite and collapsed into a stranger&#39;s arms Sunrise brought a pounding...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">ceo</span>
+                            
+                            <span class="tag">billionaire</span>
+                            
+                            <span class="tag">contemporary</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/finding-bliss-again-my-baby-daddy-is-the-most-powerful-man-alive/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/the-rise-of-the-ugly-luna-2/">
+                            <img src="/covers/the-rise-of-the-ugly-luna-2-书籍封面.png" alt="The Rise Of The Ugly Luna 2" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/the-rise-of-the-ugly-luna-2/" style="color: inherit; text-decoration: none;">The Rise Of The Ugly Luna 2</a></h3>
+                        <p class="novel-desc">Lyric had spent her life being hated. Bullied for her scarred face and hated by everyone-including her own mate-she was always told she was ugly. Her mate only kept her around to gain territory, and...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">werewolf</span>
+                            
+                            <span class="tag">alpha</span>
+                            
+                            <span class="tag">pack</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/the-rise-of-the-ugly-luna-2/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/">
+                            <img src="/covers/i-slapped-my-fiance-then-married-his-billionaire-nemesis-封面.png" alt="I Slapped My Fiancé-Then Married His Billionaire Nemesis" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/" style="color: inherit; text-decoration: none;">I Slapped My Fiancé-Then Married His Billionaire Nemesis</a></h3>
+                        <p class="novel-desc">...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                            <span class="tag">fantasy</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/married-to-an-ugly-husband-no/">
+                            <img src="/covers/married-to-an-ugly-husband-no-书籍封面.png" alt="Married to an Ugly Husband No!" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/married-to-an-ugly-husband-no/" style="color: inherit; text-decoration: none;">Married to an Ugly Husband No!</a></h3>
+                        <p class="novel-desc">My malicious stepsister threatened me with my brother&#39;s life, forcing me to marry a man rumored to be unspeakably ugly. I had no choice but to comply. However, after the wedding, I discovered that...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">ocean</span>
+                            
+                            <span class="tag">underwater</span>
+                            
+                            <span class="tag">marine</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/married-to-an-ugly-husband-no/" class="read-btn">Read Now</a>
+                            <div class="update-date">2025-11-27</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories">
+            <div class="section-header">
+                <h2 class="section-title">Browse by Category</h2>
+                <a href="/all-novels/" class="view-more">View All Categories</a>
+            </div>
+            <div class="category-list">
+                
+                <div class="category-item">
+                    <div class="category-title">
+                        Romance
+                        <a href="/all-novels/">View All</a>
+                    </div>
+                    <ul class="category-books">
+                        
+                        <li><a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/">I Slapped My Fiancé-Then Married His Billionaire Nemesis</a></li>
+                        
+                        <li><a href="/novels/loves-prescription-the-small-town-girl-is-an-extraordinary-healer-3/">Love&#39;s Prescription The Small-Town Girl Is An Extraordinary Healer 3</a></li>
+                        
+                        <li><a href="/novels/the-son-of-red-fang/">The Son of Red Fang</a></li>
+                        
+                        <li><a href="/novels/once-discarded-now-desired-2/">Once Discarded, Now Desired 2</a></li>
+                        
+                        <li><a href="/novels/a-goddess-in-disguise-divorce-marriage-domination/">A Goddess In Disguise Divorce, Marriage, Domination</a></li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="category-item">
+                    <div class="category-title">
+                        Fantasy
+                        <a href="/all-novels/">View All</a>
+                    </div>
+                    <ul class="category-books">
+                        
+                        <li><a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/">I Slapped My Fiancé-Then Married His Billionaire Nemesis</a></li>
+                        
+                        <li><a href="/novels/marrying-her-was-easy-losing-her-was-hell/">Marrying Her Was Easy, Losing Her Was Hell</a></li>
+                        
+                        <li><a href="/novels/a-goddess-in-disguise-divorce-marriage-domination/">A Goddess In Disguise Divorce, Marriage, Domination</a></li>
+                        
+                        <li><a href="/novels/the-queen-returns-pampered-by-her-three-powerhouse-brothers/">The Queen Returns Pampered By Her Three Powerhouse Brothers</a></li>
+                        
+                        <li><a href="/novels/heaven-sent-her-hell-obeyed-her/">Heaven Sent Her, Hell Obeyed Her</a></li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="category-item">
+                    <div class="category-title">
+                        Werewolf
+                        <a href="/all-novels/">View All</a>
+                    </div>
+                    <ul class="category-books">
+                        
+                        <li><a href="/novels/the-son-of-red-fang/">The Son of Red Fang</a></li>
+                        
+                        <li><a href="/novels/crimson-moons-exile/">Crimson Moon&#39;s Exile</a></li>
+                        
+                        <li><a href="/novels/the-last-spirit-wolf/">The Last Spirit Wolf</a></li>
+                        
+                        <li><a href="/novels/the-unwanted-daughters-alpha-king/">The Unwanted Daughter&#39;s Alpha King</a></li>
+                        
+                        <li><a href="/novels/the-rise-of-the-ugly-luna-2/">The Rise Of The Ugly Luna 2</a></li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="category-item">
+                    <div class="category-title">
+                        Contemporary
+                        <a href="/all-novels/">View All</a>
+                    </div>
+                    <ul class="category-books">
+                        
+                        <li><a href="/novels/marrying-her-was-easy-losing-her-was-hell/">Marrying Her Was Easy, Losing Her Was Hell</a></li>
+                        
+                        <li><a href="/novels/rejected-no-more-i-am-way-out-of-your-league-darling/">Rejected No More I Am Way Out Of Your League, Darling!</a></li>
+                        
+                        <li><a href="/novels/too-late-for-regret-the-genius-heiress-who-shines/">Too Late For Regret The Genius Heiress Who Shines</a></li>
+                        
+                        <li><a href="/novels/finding-bliss-again-my-baby-daddy-is-the-most-powerful-man-alive/">Finding Bliss Again My Baby Daddy Is The Most Powerful Man Alive!</a></li>
+                        
+                        <li><a href="/novels/unstoppable-brilliance-she-has-the-world-on-a-leash/">Unstoppable Brilliance She Has The World On A Leash</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+
+    <!-- 隐藏的小说数据，供JavaScript使用 -->
+    <script type="application/json" id="novels-data">
+        [{"author": "Unknown Author", "chapters": 102, "cover_url": "/covers/i-slapped-my-fiance-then-married-his-billionaire-nemesis-\u5c01\u9762.png", "description": "...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "I Slapped My Fiance\u0301-Then Married His Billionaire Nemesis", "url": "/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/"}, {"author": "Unknown Author", "chapters": 400, "cover_url": "/covers/loves-prescription-the-small-town-girl-is-an-extraordinary-healer-3-\u4e66\u7c4d\u5c01\u9762.png", "description": "To most, Verena passed for a small-town clinic doctor; in truth, she worked quiet miracles. Three years after Isaac fell hopelessly for her and kept vigil through lonely nights, a crash left him in a...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["romance"], "title": "Love\u0027s Prescription The Small-Town Girl Is An Extraordinary Healer 3", "url": "/novels/loves-prescription-the-small-town-girl-is-an-extraordinary-healer-3/"}, {"author": "Unknown Author", "chapters": 100, "cover_url": "/covers/the-son-of-red-fang-ScreenShot_2025-11-27_104040_145.png", "description": "Alpha werewolves should be cruel and merciless with unquestionable strength and authority, at least that\u2019s what Alpha Charles Redmen believes and he doesn\u2019t hesitate to raise his kids to be the same...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "The Son of Red Fang", "url": "/novels/the-son-of-red-fang/"}, {"author": "Unknown Author", "chapters": 326, "cover_url": "/covers/once-discarded-now-desired-2-\u4e66\u7c4d\u5c01\u9762.png", "description": "After three years of giving her all to the marriage Eleanor\u0027s reward was nothing but a ruthless divorce! Trouble brewed from her ex-husband\u0027s old lover, and the in-law eagerly piled on. Coffee...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["romance"], "title": "Once Discarded, Now Desired 2", "url": "/novels/once-discarded-now-desired-2/"}, {"author": "Unknown Author", "chapters": 100, "cover_url": "/covers/marrying-her-was-easy-losing-her-was-hell-ScreenShot_2025-11-27_104146_596.png", "description": "\"Stella once savored Marc\u0027s devotion, yet his covert cruelty cut deep. She torched their weddin\u0027 portrait at his feet while he sent flirty messages to his mistress. With her chest tight and eyes...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["ocean", "underwater", "marine"], "title": "Marrying Her Was Easy, Losing Her Was Hell", "url": "/novels/marrying-her-was-easy-losing-her-was-hell/"}, {"author": "Unknown Author", "chapters": 104, "cover_url": "/covers/a-goddess-in-disguise-divorce-marriage-domination-ScreenShot_2025-11-27_104258_654.png", "description": "...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "A Goddess In Disguise Divorce, Marriage, Domination", "url": "/novels/a-goddess-in-disguise-divorce-marriage-domination/"}, {"author": "Unknown Author", "chapters": 101, "cover_url": "/covers/the-queen-returns-pampered-by-her-three-powerhouse-brothers-ScreenShot_2025-11-27_104058_981.png", "description": "...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "The Queen Returns Pampered By Her Three Powerhouse Brothers", "url": "/novels/the-queen-returns-pampered-by-her-three-powerhouse-brothers/"}, {"author": "Unknown Author", "chapters": 100, "cover_url": "/covers/heaven-sent-her-hell-obeyed-her-\u4e66\u7c4d\u5c01\u9762.png", "description": "...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Heaven Sent Her, Hell Obeyed Her", "url": "/novels/heaven-sent-her-hell-obeyed-her/"}, {"author": "Unknown Author", "chapters": 102, "cover_url": "/covers/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo-\u4e66\u7c4d\u5c01\u9762.png", "description": "...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "The Heiress Spoiled by Four Brothers and One Devilish CEO", "url": "/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/"}, {"author": "Unknown Author", "chapters": 1037, "cover_url": "/covers/rejected-no-more-i-am-way-out-of-your-league-darling-\u4e66\u7c4d\u5c01\u9762.png", "description": "For ten years, Daniela showered her ex-husband with unwavering devotion,only to discover she was just his biggest joke. Feeling humiliated yet determined,she finally divorced him. Three months later,...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Rejected No More I Am Way Out Of Your League, Darling!", "url": "/novels/rejected-no-more-i-am-way-out-of-your-league-darling/"}, {"author": "Unknown Author", "chapters": 104, "cover_url": "/covers/too-late-for-regret-the-genius-heiress-who-shines-ScreenShot_2025-11-27_104318_455.png", "description": "Blinded in a crash, Cary was rejected by every socialite\u2014except Evelina, who married him without hesitation. Three years later, he regained his sight and ended their marriage. \"We\u2019ve already lost so...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Too Late For Regret The Genius Heiress Who Shines", "url": "/novels/too-late-for-regret-the-genius-heiress-who-shines/"}, {"author": "Unknown Author", "chapters": 105, "cover_url": "/covers/scorned-ex-wife-queen-of-ashes-\u5c01\u9762.png", "description": "...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "SCORNED EX WIFE  Queen Of Ashes", "url": "/novels/scorned-ex-wife-queen-of-ashes/"}, {"author": "Unknown Author", "chapters": 107, "cover_url": "/covers/irresistible-seduction-married-for-deception-loved-for-real-\u5c01\u9762.png", "description": "Five years into marriage, Hannah caught Vincent slipping into a hotel with his first love-the woman ,au-bu!uiXJa^a Jay pio+ 1ubis auL 1ob0 Ja^au au married her only for her resemblance to his true...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["romance"], "title": "Irresistible Seduction Married For Deception, Loved For Real", "url": "/novels/irresistible-seduction-married-for-deception-loved-for-real/"}, {"author": "Unknown Author", "chapters": 100, "cover_url": "/covers/finding-bliss-again-my-baby-daddy-is-the-most-powerful-man-alive-\u4e66\u7c4d\u5c01\u9762.png", "description": "At their wedding night, Kayla caught her brand-new husband cheating. Reeling and half-drunk, she staggered into the wrong suite and collapsed into a stranger\u0027s arms Sunrise brought a pounding...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Finding Bliss Again My Baby Daddy Is The Most Powerful Man Alive!", "url": "/novels/finding-bliss-again-my-baby-daddy-is-the-most-powerful-man-alive/"}, {"author": "Unknown Author", "chapters": 100, "cover_url": "/covers/irresistible-temptation-from-the-meek-wife-to-the-daring-star-\u4e66\u7c4d\u5c01\u9762.png", "description": "One year into marriage, Yvonne realized she was nothing more than a substitute for someone else memory. When his true love reappeared, Julian tossed a divorce contract her way. \"She\u0027s back. We\u0027re...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["romance"], "title": "Irresistible Temptation From The Meek Wife To The Daring Star", "url": "/novels/irresistible-temptation-from-the-meek-wife-to-the-daring-star/"}, {"author": "Unknown Author", "chapters": 248, "cover_url": "/covers/heartbreak-billionairehe-should-never-have-let-go-ScreenShot_2025-11-27_104212_338.png", "description": "Sunlit hours found their affection glimmering while moonlit nights ignited reckless desire. But when Brandon learned his beloved might last only half a year, he coolly handed Millie divorce papers,...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["romance"], "title": "Heartbreak Billionaire\uff1aHe should never have Let Go", "url": "/novels/heartbreak-billionairehe-should-never-have-let-go/"}, {"author": "Unknown Author", "chapters": 100, "cover_url": "/covers/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen-ScreenShot_2025-11-27_104240_384.png", "description": "Arabella, a state-trained prodigy, won freedom after seven brutal years. Back home, she found he aunt basking in her late parents\u0027 mansion while hei twin sister scrounged for scraps. Fury ignited her...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Brilliance Unmasked\uff1a The Cold-Blooded Tycoon Wants His Vengeful Queen", "url": "/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/"}, {"author": "Unknown Author", "chapters": 100, "cover_url": "/covers/unstoppable-brilliance-she-has-the-world-on-a-leash-ScreenShot_2025-11-27_104017_490.png", "description": "Hidden for years by the state despite a fortune worth billions, Grace bounced through three foster homes. At her fourth stop, the wealthy Holden family showered her with care, sparking spiteful...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Unstoppable Brilliance She Has The World On A Leash", "url": "/novels/unstoppable-brilliance-she-has-the-world-on-a-leash/"}, {"author": "Unknown Author", "chapters": 162, "cover_url": "/covers/crimson-moons-exile-ScreenShot_2025-11-27_103934_971.png", "description": "A fallen prince. A human marked for death. An eternal vow that shatters worlds.\nWhen Kaizen, a monstrous heir to hell, saves teacher Willow from his own pack, he becomes a traitor. Hunted for murder,...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Crimson Moon\u0027s Exile", "url": "/novels/crimson-moons-exile/"}, {"author": "Unknown Author", "chapters": 100, "cover_url": "/covers/the-last-spirit-wolf-\u4e66\u7c4d\u5c01\u9762.png", "description": "\u201cINCOMING! 10 Injured Wolves and 3 Lycans! \u201c Sophie, my bestie, our alpha yells in my head \u201cLYCANS?! Did you just say LYCANS?! \u201cYes Vera! They are coming! Get your people ready.\u201d I couldn\u2019t believe...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "The Last Spirit Wolf", "url": "/novels/the-last-spirit-wolf/"}, {"author": "Unknown Author", "chapters": 99, "cover_url": "/covers/the-unwanted-daughters-alpha-king-\u5c01\u9762.png", "description": "The door behind me opened. Alpha Adrian was smiling, looking at the man now standing before us both, but his face fell the second his eyes landed on me, shock and disgust filling his gaze. \u2018Alpha...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "The Unwanted Daughter\u0027s Alpha King", "url": "/novels/the-unwanted-daughters-alpha-king/"}, {"author": "Unknown Author", "chapters": 241, "cover_url": "/covers/the-rise-of-the-ugly-luna-2-\u4e66\u7c4d\u5c01\u9762.png", "description": "Lyric had spent her life being hated. Bullied for her scarred face and hated by everyone-including her own mate-she was always told she was ugly. Her mate only kept her around to gain territory, and...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "The Rise Of The Ugly Luna 2", "url": "/novels/the-rise-of-the-ugly-luna-2/"}, {"author": "Unknown Author", "chapters": 100, "cover_url": "/covers/hell-in-his-eyes-heaven-in-his-kiss-\u4e66\u7c4d\u5c01\u9762.png", "description": "Gabriela learned her boyfriend had been two-timing her and writing her off as a brainless bimbo, so she drowned her heartache in reckless adventure. One sultry blackout night she tumbled into bed...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Hell In His Eyes, Heaven In His Kiss", "url": "/novels/hell-in-his-eyes-heaven-in-his-kiss/"}, {"author": "Unknown Author", "chapters": 100, "cover_url": "/covers/the-humble-ex-wife-is-now-a-brillia-ScreenShot_2025-11-27_104122_502.png", "description": "For three quiet, patient years, Christina kept house,only to be coldly discarded by the man she once trusted.\n\n\n\nInstead,he paraded a new lover, making her the punchline of every town...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["romance"], "title": "The Humble Ex-wife Is Now A Brillia", "url": "/novels/the-humble-ex-wife-is-now-a-brillia/"}, {"author": "Unknown Author", "chapters": 100, "cover_url": "/covers/married-to-an-ugly-husband-no-\u4e66\u7c4d\u5c01\u9762.png", "description": "My malicious stepsister threatened me with my brother\u0027s life, forcing me to marry a man rumored to be unspeakably ugly. I had no choice but to comply. However, after the wedding, I discovered that...", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["ocean", "underwater", "marine"], "title": "Married to an Ugly Husband No!", "url": "/novels/married-to-an-ugly-husband-no/"}, {"author": "Unknown Author", "chapters": 105, "cover_url": "/covers/she-was-the-joke-now-shes-the-queen-\u4e66\u7c4d\u5c01\u9762.png", "description": "Two years of marriage left Brinley questioning everything, her supposed happiness revealed as nothing but sham. Abandoning her past for Colin, she discovered onl betrayal and a counterfeit wedding....", "last_updated": "2025-11-27", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "She Was The Joke, Now She\u0027s The Queen", "url": "/novels/she-was-the-joke-now-shes-the-queen/"}]
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <div class="footer-logo">NovelVibe</div>
+                <p>NovelVibe offers a wide selection of free novels for women. Discover new stories across various genres and enjoy reading anywhere, anytime.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/about/">About Us</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                    <li><a href="/privacy/">Privacy Policy</a></li>
+                    <li><a href="/terms/">Terms of Service</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="/help/">Help Center</a></li>
+                    <li><a href="/faq/">FAQ</a></li>
+                    <li><a href="/feedback/">Feedback</a></li>
+                    <li><a href="/report/">Report Issue</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Connect With Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2024 NovelVibe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simulate loading effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.novel-card');
+            cards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.1}s`;
+            });
+        });
+
+        // Simple reading history simulation
+        const historyItems = document.querySelectorAll('.history .novel-card');
+        historyItems.forEach(item => {
+            item.addEventListener('click', function() {
+                alert('Continue reading from where you left off?');
+            });
+        });
+
+        // Simulate "Read Now" button functionality
+        const readButtons = document.querySelectorAll('.read-btn');
+        readButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.stopPropagation();
+                // 记录阅读历史
+                const novelCard = this.closest('.novel-card');
+                const novelTitle = novelCard.querySelector('.novel-title').textContent;
+                const novelUrl = this.getAttribute('href');
+                const coverUrl = novelCard.querySelector('.novel-cover').getAttribute('src');
+                
+                saveToReadingHistory({
+                    title: novelTitle,
+                    url: novelUrl,
+                    cover_url: coverUrl,
+                    lastRead: new Date().toISOString()
+                });
+            });
+        });
+
+        // 阅读历史管理功能
+        function saveToReadingHistory(novelData) {
+            let history = JSON.parse(localStorage.getItem('readingHistory') || '[]');
+            
+            // 移除已存在的记录
+            history = history.filter(item => item.title !== novelData.title);
+            
+            // 添加到开头
+            history.unshift(novelData);
+            
+            // 只保留最近5条记录
+            history = history.slice(0, 5);
+            
+            localStorage.setItem('readingHistory', JSON.stringify(history));
+            loadReadingHistory();
+        }
+
+        function loadReadingHistory() {
+            const history = JSON.parse(localStorage.getItem('readingHistory') || '[]');
+            const container = document.getElementById('history-container');
+            
+            if (history.length === 0) {
+                container.innerHTML = '<p style="text-align: center; color: #666; padding: 40px;">No reading history yet</p>';
+                return;
+            }
+            
+            container.innerHTML = history.map(novel => `
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <img src="${novel.cover_url}" alt="${novel.title}" class="novel-cover">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title">${novel.title}</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: ${Math.floor(Math.random() * 100)}%"></div>
+                        </div>
+                        <a href="${novel.url}" class="read-btn">Continue Reading</a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function clearReadingHistory() {
+            localStorage.removeItem('readingHistory');
+            loadReadingHistory();
+        }
+
+        // 检查是否有新内容的轻量级机制
+        function checkForNewContent() {
+            const lastCheck = localStorage.getItem('lastContentCheck');
+            const currentTime = new Date().getTime();
+            
+            // 如果超过6小时没检查，或者是首次访问，则检查新内容
+            if (!lastCheck || (currentTime - parseInt(lastCheck)) > 6 * 60 * 60 * 1000) {
+                // 检查页面上的小说数量
+                const novelCount = document.querySelectorAll('.novel-card').length;
+                const lastNovelCount = localStorage.getItem('lastNovelCount');
+                
+                if (lastNovelCount && parseInt(lastNovelCount) < novelCount) {
+                    // 发现新小说，显示提示
+                    showNewContentNotification();
+                }
+                
+                // 更新记录
+                localStorage.setItem('lastContentCheck', currentTime.toString());
+                localStorage.setItem('lastNovelCount', novelCount.toString());
+            }
+        }
+        
+        function showNewContentNotification() {
+            // 创建一个温和的提示，不会干扰阅读历史
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: linear-gradient(135deg, #ff6b6b, #9c89b8);
+                color: white;
+                padding: 15px 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                z-index: 10000;
+                font-size: 14px;
+                cursor: pointer;
+                animation: slideIn 0.3s ease-out;
+            `;
+            notification.innerHTML = `
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-sparkles" style="color: #ffeb3b;"></i>
+                    <span>发现新小说！</span>
+                    <i class="fas fa-times" style="margin-left: 10px; font-size: 12px; opacity: 0.7;"></i>
+                </div>
+            `;
+            
+            // 添加CSS动画
+            if (!document.getElementById('notification-styles')) {
+                const style = document.createElement('style');
+                style.id = 'notification-styles';
+                style.textContent = `
+                    @keyframes slideIn {
+                        from { transform: translateX(100%); opacity: 0; }
+                        to { transform: translateX(0); opacity: 1; }
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+            
+            document.body.appendChild(notification);
+            
+            // 3秒后自动消失
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.style.animation = 'slideIn 0.3s ease-out reverse';
+                    setTimeout(() => notification.remove(), 300);
+                }
+            }, 3000);
+            
+            // 点击关闭
+            notification.addEventListener('click', () => {
+                notification.style.animation = 'slideIn 0.3s ease-out reverse';
+                setTimeout(() => notification.remove(), 300);
+            });
+        }
+
+        // 强制获取最新首页内容（不清除缓存）
+        function ensureFreshContent() {
+            // 每次访问首页时，通过添加时间戳参数来绕过页面缓存
+            const urlParams = new URLSearchParams(window.location.search);
+            const refreshParam = urlParams.get('v');
+            const currentTime = new Date().getTime();
+            
+            // 如果没有版本参数，或版本参数过旧（超过1分钟），则刷新
+            if (!refreshParam || (currentTime - parseInt(refreshParam)) > 60000) {
+                const newUrl = window.location.pathname + '?v=' + currentTime;
+                if (window.location.href !== window.location.origin + newUrl) {
+                    window.history.replaceState({}, '', newUrl);
+                    window.location.reload();
+                }
+            }
+        }
+
+        // Recommended For You - Read More 功能
+        let allNovels = [];
+        let currentIndex = 30; // 已经显示了初始的30本
+        const batchSize = 8;
+
+        function loadNovelsData() {
+            try {
+                const dataElement = document.getElementById('novels-data');
+                if (dataElement && dataElement.textContent.trim()) {
+                    allNovels = JSON.parse(dataElement.textContent);
+                    console.log('成功加载小说数据：', allNovels.length, '本');
+                    // 随机打乱小说顺序，但保持前30本不变（已经在模板中显示）
+                    const remainingNovels = allNovels.slice(30);
+                    shuffleArray(remainingNovels);
+                    allNovels = [...allNovels.slice(0, 30), ...remainingNovels];
+                } else {
+                    console.error('未找到小说数据或数据为空');
+                    allNovels = [];
+                }
+            } catch (error) {
+                console.error('加载小说数据时出错:', error);
+                allNovels = [];
+            }
+        }
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        function createNovelCard(novel) {
+            return `
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="${novel.url}">
+                            <img src="${novel.cover_url}" alt="${novel.title}" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="${novel.url}" style="color: inherit; text-decoration: none;">${novel.title}</a></h3>
+                        <p class="novel-desc">${novel.description}</p>
+                        <div class="tags">
+                            ${novel.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                        </div>
+                        <div class="card-footer">
+                            <a href="${novel.url}" class="read-btn">Read Now</a>
+                            <div class="update-date">${novel.last_updated}</div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function loadMoreRecommendedNovels() {
+            const grid = document.getElementById('recommended-grid');
+            const readMoreBtn = document.getElementById('read-more-btn');
+            const loadingIndicator = document.getElementById('loading-indicator');
+            
+            if (!grid || currentIndex >= allNovels.length) {
+                // 没有更多小说了，隐藏按钮
+                if (readMoreBtn) {
+                    readMoreBtn.style.display = 'none';
+                }
+                return;
+            }
+
+            // 显示加载指示器，隐藏按钮
+            if (loadingIndicator) loadingIndicator.style.display = 'block';
+            if (readMoreBtn) readMoreBtn.disabled = true;
+
+            setTimeout(() => {
+                const endIndex = Math.min(currentIndex + batchSize, allNovels.length);
+                const batch = allNovels.slice(currentIndex, endIndex);
+                
+                batch.forEach(novel => {
+                    grid.insertAdjacentHTML('beforeend', createNovelCard(novel));
+                });
+                
+                currentIndex = endIndex;
+                
+                // 隐藏加载指示器
+                if (loadingIndicator) loadingIndicator.style.display = 'none';
+                
+                // 更新按钮状态
+                if (readMoreBtn) {
+                    readMoreBtn.disabled = false;
+                    if (currentIndex >= allNovels.length) {
+                        readMoreBtn.textContent = 'No More Novels';
+                        readMoreBtn.disabled = true;
+                        setTimeout(() => {
+                            readMoreBtn.style.display = 'none';
+                        }, 2000);
+                    }
+                }
+            }, 800); // 模拟加载延迟
+        }
+
+        function initializeRecommendedSection() {
+            loadNovelsData();
+            
+            // 绑定Read More按钮事件
+            const readMoreBtn = document.getElementById('read-more-btn');
+            if (readMoreBtn) {
+                readMoreBtn.addEventListener('click', loadMoreRecommendedNovels);
+                
+                // 确保按钮可见（防止被其他逻辑隐藏）
+                readMoreBtn.style.display = 'inline-flex';
+                
+                // 延迟检查数据加载状态
+                setTimeout(() => {
+                    console.log('小说数据加载状态：', allNovels.length, '本小说');
+                    // 只有在确实没有更多小说时才隐藏按钮
+                    if (allNovels.length <= 30) {
+                        readMoreBtn.style.display = 'none';
+                        console.log('小说数量不足，隐藏Read More按钮');
+                    } else {
+                        readMoreBtn.style.display = 'inline-flex';
+                        console.log('显示Read More按钮，可加载更多小说');
+                    }
+                }, 200);
+            }
+        }
+
+        // 页面加载时初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            loadReadingHistory();
+            checkForNewContent();
+            
+            // 初始化推荐区域（优先执行，避免被页面刷新中断）
+            initializeRecommendedSection();
+            
+            // 确保获取最新内容（放在最后，避免影响其他功能）
+            setTimeout(() => {
+                ensureFreshContent();
+            }, 1000); // 延迟1秒执行，确保推荐区域已经初始化完成
+        });
+    </script>
+</body>
+</html>
